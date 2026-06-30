@@ -1135,15 +1135,9 @@ function sendFB() {
     if (!txt) { toast('Please write something first 🥺'); return; }
 
     // Replace with your EmailJS credentials
-    const SID = 'YOUR_SERVICE_ID';
-    const TID = 'YOUR_TEMPLATE_ID';
-    const PK  = 'YOUR_PUBLIC_KEY';
-
-    if (SID === 'YOUR_SERVICE_ID') {
-        toast('Message sent! ❤️ Thank you!');
-        document.getElementById('fbText').value = '';
-        return;
-    }
+    const SID = 'service_ady9eh9';
+    const TID = 'template_ckmcj4w';
+    const PK  = 'oR_bQXim755QTWWKD';
 
     emailjs.send(SID, TID, { message: txt, from_name:'Birthday Surprise Feedback' }, PK)
         .then(() => { toast('Message sent! ❤️ Thank you!'); document.getElementById('fbText').value=''; })
